@@ -4,15 +4,18 @@ SISTEMA DE GESTIÓ MATRICULACIÓ PER A UNA ESCOLA PÚBLICA D’ADULTS
 ## Informació del projecte
 
 El projecte a realitzar consistix en crear un sistema de gestió de matrícula per a Escoles Públiques d'adults a la Comunitat Valenciana, concretament la EPA Pasqual i Tirado e Castelló de Plana però que siga adaptable a qualsevol altra. En aquestos centres no es disposa de personal administratiu, per tant, són els mateixos professors els qui s'han de fer càrrec de la matrícula i administració de tot el procés inscripció de l'alumnat.
+
 El projecte te dues parts diferenciades.
+ 
 Per una banda una pàgina on els alumnes puguin introduir les dades de la seua matrícula i fer-se una fota i un altra pàgina on aquesta informació pugui ser validada per un professor a un altre ordinador després d'entregar la documentació requerida.
+
 Per altra banda, el mateix sistema ha de ser capaç de gestionar la informació introduïda en la manera que la EPA (Escola pública d'adults) requerix, facilitant així el post-procés de matrícula i fer accessibles totes les dades. La informació proporcionada consistirà principalment en:
-Els llistats dels alumnes matriculats.
-Els llistats de les persones acceptades.
-Imprimir documentació varia com les orles o els llistats.
-Permetre organitzar per grups els matriculats a Ges (Secundària per a adults).
-Exportar dades a arxiu de configuració de moodle.
-I gestions varies en la base de dades com crear nous cursos, borrar-los, ofertar-los, etc...
+- Els llistats dels alumnes matriculats.
+- Els llistats de les persones acceptades.
+- Imprimir documentació varia com les orles o els llistats.
+- Permetre organitzar per grups els matriculats a Ges (Secundària per a adults).
+- Exportar dades a arxiu de configuració de moodle.
+- I gestions varies en la base de dades com crear nous cursos, borrar-los, ofertar-los, etc...
 
 ## Instalació de projecte
 
