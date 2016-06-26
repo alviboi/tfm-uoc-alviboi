@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Gestió de matricula per a EPA: Fitxer de Codi class.ConsultesBD.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Gestió de matricula per a EPA
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Classes del Sistema de gestió de matricula per a una escola pública d&#39;adults. En esta aprt de la documentació trobem les clases que hem utilitzat.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pàgina&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Pàgines&#160;Relacionades</span></a></li>
+      <li><a href="annotated.html"><span>Estructures&#160;de&#160;Dades</span></a></li>
+      <li class="current"><a href="files.html"><span>Fitxers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Llista&#160;dels&#160;Fitxers</span></a></li>
+      <li><a href="globals.html"><span>Globals</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tot</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estructures de Dades</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fitxers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funcions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pàgines</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">class.ConsultesBD.php</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="class_8_consultes_b_d_8php.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;?php </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;include_once <span class="stringliteral">&#39;class.database.php&#39;</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_8_consultes_b_d_8php.html#a9c7f04e6756dc4f495172a0a527f7e46">   25</a></span>&#160;<span class="keyword">function</span> <a class="code" href="class_8_consultes_b_d_8php.html#a9c7f04e6756dc4f495172a0a527f7e46">utf8_encode_deep2</a>(&amp;$input) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span> (is_string($input)) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        $input = utf8_encode($input);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (is_array($input)) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">foreach</span> ($input as &amp;$value) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <a class="code" href="class_8_consultes_b_d_8php.html#a9c7f04e6756dc4f495172a0a527f7e46">utf8_encode_deep2</a>($value);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        unset($value);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (is_object($input)) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        $vars = array_keys(get_object_vars($input));</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">foreach</span> ($vars as $var) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="class_8_consultes_b_d_8php.html#a9c7f04e6756dc4f495172a0a527f7e46">utf8_encode_deep2</a>($input-&gt;$var);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_consultes_b_d.html">   48</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_consultes_b_d.html">ConsultesBD</a>{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">public</span> $link;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_consultes_b_d.html#a095c5d389db211932136b53f25f39685">   57</a></span>&#160;        <span class="keyword">function</span> <a class="code" href="class_consultes_b_d.html#a095c5d389db211932136b53f25f39685">__construct</a>(){ <span class="comment">//Construct s&#39;executa només es crea l&#39;objecte</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            $db_connection = <span class="keyword">new</span> <a class="code" href="classdb_connection.html">dbConnection</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            $this-&gt;link = $db_connection-&gt;connect();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">return</span> $this-&gt;link;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">/*          </span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">        function InsertaEstudiant($DNI, $Nom, $Cognoms, $Adreça, $CP, $Població, $Sexe, $DataNaixement, $País, $Nacionalitat, $LocalitatNaixement, $ProvínciaNaixement, $Email, $Telèfon){</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">            $query = $this-&gt;link-&gt;prepare(&quot;INSERT INTO `Estudiant`(DNI, Nom, Cognoms, Adreça, CP, Població, Sexe, DataNaixement, País, Nacionalitat, LocalitatNaixement, ProvínciaNaixement, Email, Telèfon) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)&quot;);</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">            $values = array ($DNI, $Nom, $Cognoms, $Adreça, $CP, $Població, $Sexe, $DataNaixement, $País, $Nacionalitat, $LocalitatNaixement, $ProvínciaNaixement, $Email, $Telèfon);</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">            $query-&gt;execute($values);</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">            $result = $query -&gt; fetchAll();</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">            $output=utf8_encode_deep2($result);</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">            return $output;</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">        }</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">        </span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">*/</span>      </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_consultes_b_d.html#ac93d3bcc30cfb4c7d14c71bf48a5f2bf">   85</a></span>&#160;        <span class="keyword">function</span> <a class="code" href="class_consultes_b_d.html#ac93d3bcc30cfb4c7d14c71bf48a5f2bf">ConsultaEstudiant</a>($DNI, $Cognoms, $Nom){ <span class="comment">//</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            $query = $this-&gt;link-&gt;prepare(<span class="stringliteral">&quot;SELECT * FROM Estudiant WHERE dni=? OR Cognoms LIKE ? OR Nom LIKE ?&quot;</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            $Cognoms = $Cognoms . <span class="charliteral">&#39;%&#39;</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            $Nom = $Nom . <span class="charliteral">&#39;%&#39;</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            $values = array ($DNI, $Cognoms, $Nom);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            $query-&gt;execute($values);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            $result = $query -&gt; fetchAll();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <a class="code" href="class_8_consultes_b_d_8php.html#a9c7f04e6756dc4f495172a0a527f7e46">utf8_encode_deep2</a>($result);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">return</span> json_encode($result);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_consultes_b_d.html#a28aa9e0d7ec7cafe6fd5c4cf30acc460">  105</a></span>&#160;        <span class="keyword">function</span> <a class="code" href="class_consultes_b_d.html#a28aa9e0d7ec7cafe6fd5c4cf30acc460">ConsultaCurs</a>($DNI){ <span class="comment">//</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                $query = $this-&gt;link-&gt;prepare(<span class="stringliteral">&quot;SELECT Cursos.Curs, Est_Curs.Optativa1, Est_Curs.Optativa2, Cursos.Camp from Est_Curs join Cursos where Est_Curs.CursCodi=Cursos.Codi and dni = ?&quot;</span>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                $values = array ($DNI);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                $query-&gt;execute($values);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                $result = $query -&gt; fetchAll();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                $count = $query -&gt; rowCount();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <span class="keywordflow">if</span> ($count&gt;0) {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                    <span class="comment">//$output=array_map(&#39;utf8_encode&#39;, $result);</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    <a class="code" href="class_8_consultes_b_d_8php.html#a9c7f04e6756dc4f495172a0a527f7e46">utf8_encode_deep2</a>($result);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                    <span class="keywordflow">return</span> json_encode($result);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <span class="keywordflow">else</span>  {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                    <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        </div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="class_consultes_b_d.html#a2f2570bd29feb3def9c7860972143ffb">  135</a></span>&#160;        <span class="keyword">function</span> <a class="code" href="class_consultes_b_d.html#a2f2570bd29feb3def9c7860972143ffb">CarregaFoto</a> ($foto, $DNI){</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            list(, $foto) = explode(<span class="charliteral">&#39;,&#39;</span>, $foto); <span class="comment">//La manera que te el SO d&#39;entendre qe es una imatge</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            mkdir($_SERVER[<span class="stringliteral">&#39;DOCUMENT_ROOT&#39;</span>] . <span class="stringliteral">&quot;/fotos_alumnes&quot;</span>);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            file_put_contents($_SERVER[<span class="stringliteral">&#39;DOCUMENT_ROOT&#39;</span>] . <span class="stringliteral">&quot;/fotos_alumnes/&quot;</span>.$DNI.<span class="stringliteral">&#39;.jpg&#39;</span>, base64_decode($foto));</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            die;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}   </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">//$user = new ConsultesBD();</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">//$b = $user-&gt;ConsultaCurs(&quot;73567572W&quot;);</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">//echo $c[0]</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">//print_r($b);</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">//var_dump($b);</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">//echo $c[&quot;0&quot;][&quot;DNI&quot;];</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;?&gt;</div>
+<div class="ttc" id="class_consultes_b_d_html_a28aa9e0d7ec7cafe6fd5c4cf30acc460"><div class="ttname"><a href="class_consultes_b_d.html#a28aa9e0d7ec7cafe6fd5c4cf30acc460">ConsultesBD\ConsultaCurs</a></div><div class="ttdeci">ConsultaCurs($DNI)</div><div class="ttdoc">Aquesta funció consulta un Estudiant segons El seu DNI únicament. </div><div class="ttdef"><b>Definition:</b> <a href="class_8_consultes_b_d_8php_source.html#l00105">class.ConsultesBD.php:105</a></div></div>
+<div class="ttc" id="class_consultes_b_d_html_a2f2570bd29feb3def9c7860972143ffb"><div class="ttname"><a href="class_consultes_b_d.html#a2f2570bd29feb3def9c7860972143ffb">ConsultesBD\CarregaFoto</a></div><div class="ttdeci">CarregaFoto($foto, $DNI)</div><div class="ttdoc">Aquesta funció realitza la càrrega d&#39;una fotografia. </div><div class="ttdef"><b>Definition:</b> <a href="class_8_consultes_b_d_8php_source.html#l00135">class.ConsultesBD.php:135</a></div></div>
+<div class="ttc" id="class_consultes_b_d_html_a095c5d389db211932136b53f25f39685"><div class="ttname"><a href="class_consultes_b_d.html#a095c5d389db211932136b53f25f39685">ConsultesBD\__construct</a></div><div class="ttdeci">__construct()</div><div class="ttdoc">Constructor . Realitzem la conexió a la base de dades. </div><div class="ttdef"><b>Definition:</b> <a href="class_8_consultes_b_d_8php_source.html#l00057">class.ConsultesBD.php:57</a></div></div>
+<div class="ttc" id="class_8_consultes_b_d_8php_html_a9c7f04e6756dc4f495172a0a527f7e46"><div class="ttname"><a href="class_8_consultes_b_d_8php.html#a9c7f04e6756dc4f495172a0a527f7e46">utf8_encode_deep2</a></div><div class="ttdeci">utf8_encode_deep2(&amp;$input)</div><div class="ttdoc">Aquesta funció cambia la codificació a UTF8. </div><div class="ttdef"><b>Definition:</b> <a href="class_8_consultes_b_d_8php_source.html#l00025">class.ConsultesBD.php:25</a></div></div>
+<div class="ttc" id="class_consultes_b_d_html"><div class="ttname"><a href="class_consultes_b_d.html">ConsultesBD</a></div><div class="ttdoc">Clase per a realitzar les consultes. </div><div class="ttdef"><b>Definition:</b> <a href="class_8_consultes_b_d_8php_source.html#l00048">class.ConsultesBD.php:48</a></div></div>
+<div class="ttc" id="class_consultes_b_d_html_ac93d3bcc30cfb4c7d14c71bf48a5f2bf"><div class="ttname"><a href="class_consultes_b_d.html#ac93d3bcc30cfb4c7d14c71bf48a5f2bf">ConsultesBD\ConsultaEstudiant</a></div><div class="ttdeci">ConsultaEstudiant($DNI, $Cognoms, $Nom)</div><div class="ttdoc">Aquesta funció consulta un Estudiant segons El seu DNI, Nom i COgnoms. </div><div class="ttdef"><b>Definition:</b> <a href="class_8_consultes_b_d_8php_source.html#l00085">class.ConsultesBD.php:85</a></div></div>
+<div class="ttc" id="classdb_connection_html"><div class="ttname"><a href="classdb_connection.html">dbConnection</a></div><div class="ttdoc">Clase per a realitzar la conexió </div><div class="ttdef"><b>Definition:</b> <a href="class_8database_8php_source.html#l00019">class.database.php:19</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat a Dj Jun 2 2016 18:06:42 per a Gestió de matricula per a EPA per &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

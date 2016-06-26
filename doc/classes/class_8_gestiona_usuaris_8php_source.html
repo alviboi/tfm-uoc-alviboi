@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Gestió de matricula per a EPA: Fitxer de Codi class.GestionaUsuaris.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Gestió de matricula per a EPA
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Classes del Sistema de gestió de matricula per a una escola pública d&#39;adults. En esta aprt de la documentació trobem les clases que hem utilitzat.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pàgina&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Pàgines&#160;Relacionades</span></a></li>
+      <li><a href="annotated.html"><span>Estructures&#160;de&#160;Dades</span></a></li>
+      <li class="current"><a href="files.html"><span>Fitxers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Llista&#160;dels&#160;Fitxers</span></a></li>
+      <li><a href="globals.html"><span>Globals</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tot</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estructures de Dades</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fitxers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funcions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pàgines</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">class.GestionaUsuaris.php</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="class_8_gestiona_usuaris_8php.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;?php </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;include_once <span class="stringliteral">&#39;class.database.php&#39;</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_gestiona_usuaris.html">   26</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_gestiona_usuaris.html">GestionaUsuaris</a>{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">public</span> $link;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_gestiona_usuaris.html#a095c5d389db211932136b53f25f39685">   35</a></span>&#160;        <span class="keyword">function</span> <a class="code" href="class_gestiona_usuaris.html#a095c5d389db211932136b53f25f39685">__construct</a>(){ <span class="comment">//Construct s&#39;executa només es crea el objecte</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            $db_connection = <span class="keyword">new</span> <a class="code" href="classdb_connection.html">dbConnection</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            $this-&gt;link = $db_connection-&gt;connect();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">return</span> $this-&gt;link;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="comment">/*</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">        </span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">        function registraUsusaris($username,$email,$password,$ip_address,$time,$date){</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">            $query = $this-&gt;link-&gt;prepare(&quot;INSERT INTO users (username, email, password,ip_address,time,date) VALUES (?,?,?,?,?,?)&quot;);</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">            $values = array ($username,$email,$password,$ip_address,$time,$date);</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">            $query-&gt;execute($values);</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">            $counts = $query-&gt;rowCount();</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">            return $counts;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">        }</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">        </span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">        </span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">        //var campos = [&quot;Nom&quot;, &quot;Cognoms&quot;, &quot;DNI&quot;, &quot;Telefon&quot;, &quot;Sexe&quot;, &quot;DataNaixement&quot;, &quot;PaisNaixement&quot;, &quot;Nacionalitat&quot;, &quot;LocalitatNaixement&quot;, &quot;ProvinciaNaixement&quot;, &quot;Direccio&quot;, &quot;CP&quot;, &quot;Poblacio&quot;, &quot;Email&quot;]; //, &quot;ProgramaACicleI&quot;, &quot;ProgramaBCicleII&quot;, &quot;Optativa1&quot;, &quot;Optativa2&quot;, &quot;ProgramaCValenciaJQCV&quot;, &quot;ProgramaBDCursosPolivalents&quot;, &quot;ProgramaJAnglesBasic&quot;, &quot;Comentaris&quot;];</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">        /*</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">        function registraAlumne($Nom,$Cognoms,$DNI,$Telefon,$Sexe,$DataNaixement,$PaisNaixement,$Nacionalitat,$LocalitatNaixement,$ProvinciaNaixement,$Direccio,$CP,$Poblacio,$Email,$CicleIA,$CicleIIB,$Optativa1,$Optativa2,$ProgramaC,$CursosPolivalents,$ProgramaJAngles,$Comentaris,$Validada){</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">            $query = $this-&gt;link-&gt;prepare(&quot;INSERT INTO Estudiant (`DNI`, `Nom`, `Cognoms`, `Direccio`, `CP`, `Poblacio`, `Sexe`, `DataNaixement`, `PaisNaixement`, `Nacionalitat`, `LocalitatNaixement`, `ProvinciaNaixement`, `Email`, `Telefon`, `Comentaris`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)&quot;);</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">            $values = array ($DNI, $Nom, $Cognoms, $Direccio, $CP, $Poblacio, $Sexe, $DataNaixement, $PaisNaixement, $Nacionalitat, $LocalitatNaixement, $ProvinciaNaixement, $Email, $Telefon,$Comentaris);</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">            $query-&gt;execute($values);</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">            $cursos = array(&quot;CicleIA&quot;,&quot;CicleIIB&quot;,&quot;ProgramaC&quot;,&quot;CursosPolivalents&quot;,&quot;ProgramaJAngles&quot;);</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">            $cursos_valors = array($CicleIA,$CicleIIB,$ProgramaC,$CursosPolivalents,$ProgramaJAngles);</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">            for ($i = 0; $i &lt; 5; $i++) {</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">                if ($cursos_valors[$i] == &quot;No&quot;) {</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">                    </span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">                } elseif ($cursos[$i] == &quot;CicleIA&quot; || $cursos[$i] == &quot;CicleIIB&quot;){</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">                    $query2 = $this-&gt;link-&gt;prepare(&quot;INSERT INTO &quot;.$cursos[$i].&quot; (&#39;DNI&#39;,Torn&#39;,&#39;Optativa1&#39;,&#39;Optativa2&#39;,&#39;Validada&#39;) VALUES (?,?,?,?,?)&quot;);</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">                    $val = array($DNI,$cursos_valors[$i],$Optativa1,$Optativa2,$Validada);</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">                    $query2-&gt;execute($val);</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">                } else {</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">                    //$query2 = $this-&gt;link-&gt;prepare(&quot;INSERT INTO &quot;.$cursos[$i].&quot; (DNI,Torn,Validada) VALUES (?,?,0)&quot;);</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">                    $query2 = $this-&gt;link-&gt;prepare(&quot;INSERT INTO &quot;.$cursos[$i].&quot; (DNI,Torn,Validada) VALUES (?,?,?)&quot;);</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">                    $val = array($DNI,$cursos_valors[$i],$Validada);</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">                    $query2-&gt;execute($val);</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">                }</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">            </span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">        }</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">        </span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">        function LlistatperCursos($Curs) {</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">            $query2 = $this-&gt;link-&gt;prepare(&quot;SELECT * FROM Estudiant INNER JOIN &quot;.$Curs.&quot; ORDER BY Estudiant.Cognom&quot;) ;</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">            $query2-&gt;execute();</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">            $result = $query2 -&gt; fetchObject();</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">            return json_encode($result);</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">            return $result;</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">        }</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">        </span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">        </span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">        </span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">        </span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">        function Estadístiques() {</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">            $query2 = $this-&gt;link-&gt;prepare(&quot;SELECT * FROM Estudiant INNER JOIN &quot;.$Curs.&quot; ORDER BY Estudiant.Cognom&quot;) ;</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">            $query2-&gt;execute();</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">            $result = $query2 -&gt; fetchObject();</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">            return json_encode($result);</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">            return $result;</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">        }</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">        </span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">        </span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">        */</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        </div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_gestiona_usuaris.html#adfb2b42a80659e8042c9be5f22dd52ef">  106</a></span>&#160;        <span class="keyword">function</span> <a class="code" href="class_gestiona_usuaris.html#adfb2b42a80659e8042c9be5f22dd52ef">LoginUsuaris</a>($username,$password){</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            $query2 = $this-&gt;link-&gt;query(<span class="stringliteral">&quot;SELECT * FROM usuaris WHERE usuari = &#39;$username&#39; AND password = &#39;$password&#39;&quot;</span>);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            $rowcount2 = $query2-&gt;rowCount();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">return</span> $rowcount2;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="comment">/*</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">        function  UsuariInfo($username){</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">            $query3 = $this-&gt;link-&gt;query(&quot;SELECT * FROM usuaris WHERE usuari =&#39;$username&#39;&quot;);</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">            $a = $query3-&gt;rowCount();</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">            if ($a == 1)</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">            {</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">                $result = $query3 -&gt; fetchObject();</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">                return $result;</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">            else {</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">                </span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">                return $a;</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">        }</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">        */</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">//$user = new GestionaUsuaris();</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="comment">//echo $user-&gt;registraUsusaris(&#39;bob&#39;, &#39;bob@gmail.com&#39;,&#39;bob&#39;, &#39;127.0.0.1&#39;, &#39;12:00&#39;, &#39;29-02-2016&#39;);</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">//$b = $user-&gt;GetUserInfo(&#39;admin&#39;);</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="comment">//print_r($b);</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">//echo $b-&gt;id;</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">//$user = new GestionaUsuaris();</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">//$user-&gt;registraAlumne(&quot;Alumne&quot;,&quot;Cognoms1&quot;,&quot;00000008A&quot;,&quot;Telefon&quot;,&quot;Sexe&quot;,&quot;1979-05-05&quot;,&quot;PaisNaixement&quot;,&quot;Nacionalitat&quot;,&quot;LocalitatNaixement&quot;,&quot;ProvinciaNaixement&quot;,&quot;Direccio&quot;,&quot;CP&quot;,&quot;Poblacio&quot;,&quot;Email&quot;,&quot;No&quot;,&quot;No&quot;,&quot;No&quot;,&quot;No&quot;,&quot;No&quot;,&quot;CursosPolivalents&quot;,&quot;No&quot;,&quot;Comentaris&quot;);</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="comment">//$b = $user-&gt;LlistatperCursos();</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="comment">//print_r($b);</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="comment">//echo $b-&gt;id;</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    ?&gt;</div>
+<div class="ttc" id="class_gestiona_usuaris_html_a095c5d389db211932136b53f25f39685"><div class="ttname"><a href="class_gestiona_usuaris.html#a095c5d389db211932136b53f25f39685">GestionaUsuaris\__construct</a></div><div class="ttdeci">__construct()</div><div class="ttdoc">Constructor . Realitzem la conexió a la base de dades. </div><div class="ttdef"><b>Definition:</b> <a href="class_8_gestiona_usuaris_8php_source.html#l00035">class.GestionaUsuaris.php:35</a></div></div>
+<div class="ttc" id="class_gestiona_usuaris_html_adfb2b42a80659e8042c9be5f22dd52ef"><div class="ttname"><a href="class_gestiona_usuaris.html#adfb2b42a80659e8042c9be5f22dd52ef">GestionaUsuaris\LoginUsuaris</a></div><div class="ttdeci">LoginUsuaris($username, $password)</div><div class="ttdoc">Aquesta funció realitza el logins dels professors. </div><div class="ttdef"><b>Definition:</b> <a href="class_8_gestiona_usuaris_8php_source.html#l00106">class.GestionaUsuaris.php:106</a></div></div>
+<div class="ttc" id="class_gestiona_usuaris_html"><div class="ttname"><a href="class_gestiona_usuaris.html">GestionaUsuaris</a></div><div class="ttdoc">Clase per a gestionar el login dels usuaris. </div><div class="ttdef"><b>Definition:</b> <a href="class_8_gestiona_usuaris_8php_source.html#l00026">class.GestionaUsuaris.php:26</a></div></div>
+<div class="ttc" id="classdb_connection_html"><div class="ttname"><a href="classdb_connection.html">dbConnection</a></div><div class="ttdoc">Clase per a realitzar la conexió </div><div class="ttdef"><b>Definition:</b> <a href="class_8database_8php_source.html#l00019">class.database.php:19</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat a Dj Jun 2 2016 18:06:42 per a Gestió de matricula per a EPA per &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

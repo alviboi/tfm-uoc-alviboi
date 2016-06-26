@@ -1,0 +1,6 @@
+username,password,firstname,lastname,email,city,country,phone1,address,course1
+00001093Z,,Natalia,pdfso,nataliues15@gmail.com,SUECA,DSADA,654722866,Juan de juanes 4,GES21D
+00001094B,,Natalia,pdfso,nataliues15@gmail.com,SUECA,DSADA,654722866,Juan de juanes 4,GES21D
+12457896A,,ÁLFREDO,VICENTE BÓIX,alviboi@gmail.com,SUECA,ESPANYA,654722866,TRINQUET 44,GES21D
+55555555A,,ÁLFREDO,VICENTE BÓIX,alviboi@gmail.com,SUECA,ESPANYA,654722866,TRINQUET 44,GES21D
+66666666A,,Nom,Cognom,alviboi@gmail.com,Sueca,fsafasfas,654722866,La meua,GES21D

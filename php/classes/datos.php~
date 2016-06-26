@@ -1,0 +1,6 @@
+<?php
+  $DBserver="localhost"; 
+  $DBname="pasqitira"; 
+  $DBuser="root";  
+  $DBpassword="elvira";
+?>
